@@ -13,7 +13,9 @@ test('index page has expected content', async ({ page }) => {
 	}
 });
 
-test('clicking on article title in home page navigates to the article', async ({ page }) => {
+test('clicking on article title in home page navigates to the article', async ({
+	page
+}) => {
 	await page.goto('/');
 	const title = await page.textContent('article h3');
 

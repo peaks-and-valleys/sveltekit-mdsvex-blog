@@ -1,6 +1,10 @@
 <script lang="ts">
-	export let title: string;
-	export let description: string;
+	interface Props {
+		title: string;
+		description: string;
+	}
+
+	let { title, description }: Props = $props();
 
 	const siteTitle = 'SvelteKit + MDsveX Blog';
 	const formattedTitle = title ? `${title} | ${siteTitle}` : siteTitle;

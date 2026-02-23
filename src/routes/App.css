@@ -1,0 +1,81 @@
+/* Some was taken from "A (more) Modern CSS Reset" by Andy Bell
+ * https://piccalil.li/blog/a-more-modern-css-reset/
+ */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scrollbar-gutter: stable;
+}
+
+:root {
+	--spacing-unit: 4px;
+	--color-background: #e5e5e5;
+	--color-text-primary: #212121;
+	--color-text-secondary: #5a5a5a;
+}
+
+body {
+	margin: 0 auto;
+	max-inline-size: 75ch;
+	font-family:
+		'Plus Jakarta Sans Variable',
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		'Roboto',
+		'Oxygen',
+		'Ubuntu',
+		'Cantarell',
+		'Fira Sans',
+		'Droid Sans',
+		'Helvetica Neue',
+		sans-serif;
+	background-color: var(--color-background);
+	color: var(--color-text-primary);
+	line-height: 1.667;
+	overflow-wrap: anywhere;
+	word-break: normal;
+	line-break: strict;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.25;
+
+	& a {
+		text-decoration: none;
+	}
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: underline;
+	color: var(--color-text-primary);
+	font-weight: 700;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img,
+picture {
+	max-inline-size: 100%;
+	display: block;
+}

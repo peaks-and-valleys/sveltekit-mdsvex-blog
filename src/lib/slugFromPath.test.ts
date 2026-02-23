@@ -18,7 +18,9 @@ describe('slugFromPath', () => {
 			}
 		];
 
-		cases.forEach(({ path, expected }) => expect(slugFromPath(path)).toBe(expected));
+		cases.forEach(({ path, expected }) =>
+			expect(slugFromPath(path)).toBe(expected)
+		);
 	});
 
 	it('returns null for unknown extension', () => {

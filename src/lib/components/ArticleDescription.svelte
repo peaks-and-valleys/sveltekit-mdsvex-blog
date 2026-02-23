@@ -1,6 +1,10 @@
 <script lang="ts">
-	export let description: string;
-	export let slug = '';
+	interface Props {
+		description: string;
+		slug?: string;
+	}
+
+	let { description, slug = '' }: Props = $props();
 
 	const href = slug && `/posts/${slug}`;
 </script>
