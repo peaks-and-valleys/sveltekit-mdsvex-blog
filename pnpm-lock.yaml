@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      rehype-external-links:
-        specifier: ^3.0.0
-        version: 3.0.0
     devDependencies:
       '@eslint/compat':
         specifier: ^2.0.2
@@ -63,6 +59,9 @@ importers:
       rehype-autolink-headings:
         specifier: ^7.1.0
         version: 7.1.0
+      rehype-external-links:
+        specifier: ^3.0.0
+        version: 3.0.0
       rehype-slug:
         specifier: ^6.0.0
         version: 6.0.0
