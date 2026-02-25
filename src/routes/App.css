@@ -14,7 +14,7 @@ html {
 	text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	scrollbar-gutter: stable;
+	scrollbar-gutter: stable both-edges;
 }
 
 :root {
@@ -28,24 +28,16 @@ body {
 	margin: 0 auto;
 	max-inline-size: 75ch;
 	font-family:
-		'Plus Jakarta Sans Variable',
-		-apple-system,
-		BlinkMacSystemFont,
-		'Segoe UI',
-		'Roboto',
-		'Oxygen',
-		'Ubuntu',
-		'Cantarell',
-		'Fira Sans',
-		'Droid Sans',
-		'Helvetica Neue',
-		sans-serif;
+		-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+		'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 	background-color: var(--color-background);
 	color: var(--color-text-primary);
 	line-height: 1.667;
 	overflow-wrap: anywhere;
 	word-break: normal;
 	line-break: strict;
+	font-weight: 400;
+	font-variation-settings: 'wght' 400;
 }
 
 h1,
@@ -62,12 +54,20 @@ label {
 	}
 }
 
+h1,
+h2,
+h3,
+h4,
+strong {
+	font-weight: 700;
+	font-variation-settings: 'wght' 700;
+}
+
 a,
 a:visited,
 a:active {
 	text-decoration: underline;
 	color: var(--color-text-primary);
-	font-weight: 700;
 }
 
 a:hover {
