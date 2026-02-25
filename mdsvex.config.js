@@ -1,13 +1,15 @@
 import remarkGithub from 'remark-github';
-import remarkAbbr from 'remark-abbr';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeExternalLinks from 'rehype-external-links';
 import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 
 const config = defineConfig({
 	extensions: ['.svelte.md', '.md', '.svx'],
 
 	smartypants: {
+		quotes: true,
+		ellipses: true,
 		dashes: 'oldschool'
 	},
 
@@ -19,8 +21,7 @@ const config = defineConfig({
 				repository:
 					'https://github.com/peaks-and-valleys/sveltekit-mdsvex-blog.git'
 			}
-		],
-		remarkAbbr
+		]
 	],
 	rehypePlugins: [
 		rehypeSlug,
@@ -28,6 +29,13 @@ const config = defineConfig({
 			rehypeAutolinkHeadings,
 			{
 				behavior: 'wrap'
+			}
+		],
+		[
+			rehypeExternalLinks,
+			{
+				target: '_blank',
+				rel: ['noopener', 'noreferrer', 'external']
 			}
 		]
 	]
