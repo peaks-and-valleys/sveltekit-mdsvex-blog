@@ -19,7 +19,7 @@
 		<span aria-disabled="true">&lsaquo;</span>
 	{/if}
 
-	{#each items as item}
+	{#each items as item (item)}
 		{#if item === null}
 			<span aria-hidden="true">…</span>
 		{:else if item === page}

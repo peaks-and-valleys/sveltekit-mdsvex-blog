@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/state';
 	interface Props {
 		children?: import('svelte').Snippet;
 	}

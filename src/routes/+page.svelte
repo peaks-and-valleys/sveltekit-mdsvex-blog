@@ -31,7 +31,7 @@
 	>
 </p>
 
-{#each data.posts as { slug, title, author, description, date }}
+{#each data.posts as { slug, title, author, description, date } (slug)}
 	<Article>
 		<ArticleTitle {slug} {title} />
 		<ArticleMeta {author} {date} />
