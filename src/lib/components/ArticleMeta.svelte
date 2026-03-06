@@ -11,7 +11,7 @@
 
 <p>
 	<span class="author">{author}</span>
-	<span class="date">{formattedDate}</span>
+	<time class="date" datetime={date}>{formattedDate}</time>
 </p>
 
 <style>
