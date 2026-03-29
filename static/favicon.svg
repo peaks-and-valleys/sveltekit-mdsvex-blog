@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="uuid-d1b7c007-3312-4d3d-a930-031bb3dc8312" width="200" height="200" data-name="shapes" viewBox="0 0 200 200">
+    <defs>
+        <style>
+            .uuid-26b32edb-81ee-4222-9e1b-34a9fcfe6183 {
+              fill:#25252a;
+              stroke-width:0
+            }
+            @media (prefers-color-scheme:dark) {
+              .uuid-26b32edb-81ee-4222-9e1b-34a9fcfe6183 {
+                fill:#e5e5ea
+              }
+            }
+        </style>
+    </defs>
+    <g id="uuid-6ed5622a-4c3b-43f1-a676-d5625b2c1797" data-name="curve-with-rectangle">
+        <path d="M0 12v176c0 6.627 5.373 12 12 12h176c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12H12C5.373 0 0 5.373 0 12m180 176H20a8 8 0 0 1-8-8V18.25A6.25 6.25 0 0 1 18.25 12h163.5a6.25 6.25 0 0 1 6.25 6.25V180a8 8 0 0 1-8 8" class="uuid-26b32edb-81ee-4222-9e1b-34a9fcfe6183"/>
+        <path d="M130 62h-28c-6.627 0-12 5.373-12 12v24a4 4 0 0 1-4 4H74a4 4 0 0 1-4-4V46a4 4 0 0 1 4-4h28a8 8 0 0 0 8-8v-8a4 4 0 0 0-4-4H58a8 8 0 0 0-8 8v80c0 6.627 5.373 12 12 12h24a4 4 0 0 1 4 4v52a4 4 0 0 0 4 4h8a8 8 0 0 0 8-8v-48a4 4 0 0 1 4-4h24c6.627 0 12-5.373 12-12V74c0-6.627-5.373-12-12-12zm-4 40h-12a4 4 0 0 1-4-4V86a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4" class="uuid-26b32edb-81ee-4222-9e1b-34a9fcfe6183"/>
+    </g>
+</svg>
